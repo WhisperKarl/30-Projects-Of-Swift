@@ -46,7 +46,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if todos.count != 0 {
             return todos.count
         } else {
-//            let messageLabel: UILabel = UILabel()
+            let messageLabel: UILabel = UILabel()
+            
+            setMessageLabel(messageLabel, frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height), text: "No data is currently available.", textColor: UIColor.black, numberOfLines: 0, textAlignment: NSTextAlignment.center, font: UIFont(name:"Palatino-Italic", size: 20)!)
+            
+            self.mainTableView.backgroundView = messageLabel
+            self.mainTableView.separatorStyle = UITableViewCellSeparatorStyle.none
             
             return 0
             
@@ -87,7 +92,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         todos.insert(todo, at: destinationIndexPath.row)
     }
     
-    //MARK - private
+    //MARK - private function
+    func setMessageLabel(_ messageLabel: UILabel, frame: CGRect, text: String, textColor: UIColor, numberOfLines: Int, textAlignment: NSTextAlignment, font: UIFont) {
+        messageLabel.frame = frame
+        messageLabel.text = text
+        messageLabel.textColor = textColor
+        messageLabel.numberOfLines = numberOfLines
+        messageLabel.textAlignment = textAlignment
+        messageLabel.font = font
+        messageLabel.sizeToFit()
+    }
+    
     func setCellWithTodoItem(_ cell: UITableViewCell, todo: TodoItem) {
         let imageView: UIImageView = cell.viewWithTag(11) as! UIImageView
         let titleLabel: UILabel = cell.viewWithTag(12) as! UILabel
