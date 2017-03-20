@@ -12,6 +12,7 @@
 		CBE7D0851E7FC8D3002D23D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0831E7FC8D3002D23D6 /* Main.storyboard */; };
 		CBE7D0871E7FC8D3002D23D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */; };
 		CBE7D08A1E7FC8D3002D23D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0881E7FC8D3002D23D6 /* LaunchScreen.storyboard */; };
+		CBE7D0931E7FCF2B002D23D6 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0921E7FCF2B002D23D6 /* artists.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE7D0891E7FC8D3002D23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE7D08B1E7FC8D3002D23D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE7D0921E7FCF2B002D23D6 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,20 @@
 				CBE7D07F1E7FC8D3002D23D6 /* AppDelegate.swift */,
 				CBE7D0811E7FC8D3002D23D6 /* ViewController.swift */,
 				CBE7D0831E7FC8D3002D23D6 /* Main.storyboard */,
+				CBE7D0911E7FCF21002D23D6 /* Resources */,
 				CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */,
 				CBE7D0881E7FC8D3002D23D6 /* LaunchScreen.storyboard */,
 				CBE7D08B1E7FC8D3002D23D6 /* Info.plist */,
 			);
 			path = Artistry;
+			sourceTree = "<group>";
+		};
+		CBE7D0911E7FCF21002D23D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBE7D0921E7FCF2B002D23D6 /* artists.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			files = (
 				CBE7D08A1E7FC8D3002D23D6 /* LaunchScreen.storyboard in Resources */,
 				CBE7D0871E7FC8D3002D23D6 /* Assets.xcassets in Resources */,
+				CBE7D0931E7FCF2B002D23D6 /* artists.json in Resources */,
 				CBE7D0851E7FC8D3002D23D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
