@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBE7D0801E7FC8D3002D23D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D07F1E7FC8D3002D23D6 /* AppDelegate.swift */; };
-		CBE7D0821E7FC8D3002D23D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0811E7FC8D3002D23D6 /* ViewController.swift */; };
-		CBE7D0851E7FC8D3002D23D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0831E7FC8D3002D23D6 /* Main.storyboard */; };
-		CBE7D0871E7FC8D3002D23D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */; };
-		CBE7D08A1E7FC8D3002D23D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0881E7FC8D3002D23D6 /* LaunchScreen.storyboard */; };
-		CBE7D0931E7FCF2B002D23D6 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = CBE7D0921E7FCF2B002D23D6 /* artists.json */; };
+		CB462F521E80BA7600ACD456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F511E80BA7600ACD456 /* AppDelegate.swift */; };
+		CB462F591E80BA7600ACD456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB462F581E80BA7600ACD456 /* Assets.xcassets */; };
+		CB462F5C1E80BA7600ACD456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB462F5A1E80BA7600ACD456 /* LaunchScreen.storyboard */; };
+		CB462F641E80BAA600ACD456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB462F631E80BAA600ACD456 /* Main.storyboard */; };
+		CB462F691E80BAEA00ACD456 /* ArtistLsitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F681E80BAEA00ACD456 /* ArtistLsitViewController.swift */; };
+		CB462F6B1E80BB0800ACD456 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F6A1E80BB0800ACD456 /* ArtistDetailViewController.swift */; };
+		CB462F6D1E80BB6600ACD456 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F6C1E80BB6600ACD456 /* ArtistTableViewCell.swift */; };
+		CB462F6F1E80BD1C00ACD456 /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = CB462F6E1E80BD1C00ACD456 /* artists.json */; };
+		CB462F711E80BEA600ACD456 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F701E80BEA600ACD456 /* Artist.swift */; };
+		CB462F731E80BECA00ACD456 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F721E80BECA00ACD456 /* Work.swift */; };
+		CB462F751E811EB600ACD456 /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB462F741E811EB600ACD456 /* WorkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CBE7D07C1E7FC8D3002D23D6 /* Artistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBE7D07F1E7FC8D3002D23D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBE7D0811E7FC8D3002D23D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CBE7D0841E7FC8D3002D23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBE7D0891E7FC8D3002D23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CBE7D08B1E7FC8D3002D23D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBE7D0921E7FCF2B002D23D6 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		CB462F4E1E80BA7600ACD456 /* Artistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB462F511E80BA7600ACD456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB462F581E80BA7600ACD456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB462F5B1E80BA7600ACD456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB462F5D1E80BA7600ACD456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB462F631E80BAA600ACD456 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CB462F681E80BAEA00ACD456 /* ArtistLsitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistLsitViewController.swift; sourceTree = "<group>"; };
+		CB462F6A1E80BB0800ACD456 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
+		CB462F6C1E80BB6600ACD456 /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
+		CB462F6E1E80BD1C00ACD456 /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		CB462F701E80BEA600ACD456 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		CB462F721E80BECA00ACD456 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		CB462F741E811EB600ACD456 /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CBE7D0791E7FC8D3002D23D6 /* Frameworks */ = {
+		CB462F4B1E80BA7600ACD456 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,54 +47,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBE7D0731E7FC8D3002D23D6 = {
+		CB462F451E80BA7600ACD456 = {
 			isa = PBXGroup;
 			children = (
-				CBE7D07E1E7FC8D3002D23D6 /* Artistry */,
-				CBE7D07D1E7FC8D3002D23D6 /* Products */,
+				CB462F501E80BA7600ACD456 /* Artistry */,
+				CB462F4F1E80BA7600ACD456 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CBE7D07D1E7FC8D3002D23D6 /* Products */ = {
+		CB462F4F1E80BA7600ACD456 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7D07C1E7FC8D3002D23D6 /* Artistry.app */,
+				CB462F4E1E80BA7600ACD456 /* Artistry.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBE7D07E1E7FC8D3002D23D6 /* Artistry */ = {
+		CB462F501E80BA7600ACD456 /* Artistry */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7D07F1E7FC8D3002D23D6 /* AppDelegate.swift */,
-				CBE7D0811E7FC8D3002D23D6 /* ViewController.swift */,
-				CBE7D0831E7FC8D3002D23D6 /* Main.storyboard */,
-				CBE7D0911E7FCF21002D23D6 /* Resources */,
-				CBE7D0861E7FC8D3002D23D6 /* Assets.xcassets */,
-				CBE7D0881E7FC8D3002D23D6 /* LaunchScreen.storyboard */,
-				CBE7D08B1E7FC8D3002D23D6 /* Info.plist */,
+				CB462F511E80BA7600ACD456 /* AppDelegate.swift */,
+				CB462F671E80BAC900ACD456 /* Models */,
+				CB462F661E80BAC400ACD456 /* Views */,
+				CB462F651E80BABA00ACD456 /* Controllers */,
+				CB462F581E80BA7600ACD456 /* Assets.xcassets */,
+				CB462F5A1E80BA7600ACD456 /* LaunchScreen.storyboard */,
+				CB462F631E80BAA600ACD456 /* Main.storyboard */,
+				CB462F5D1E80BA7600ACD456 /* Info.plist */,
+				CB462F6E1E80BD1C00ACD456 /* artists.json */,
 			);
 			path = Artistry;
 			sourceTree = "<group>";
 		};
-		CBE7D0911E7FCF21002D23D6 /* Resources */ = {
+		CB462F651E80BABA00ACD456 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7D0921E7FCF2B002D23D6 /* artists.json */,
+				CB462F681E80BAEA00ACD456 /* ArtistLsitViewController.swift */,
+				CB462F6A1E80BB0800ACD456 /* ArtistDetailViewController.swift */,
 			);
-			name = Resources;
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CB462F661E80BAC400ACD456 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB462F6C1E80BB6600ACD456 /* ArtistTableViewCell.swift */,
+				CB462F741E811EB600ACD456 /* WorkTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CB462F671E80BAC900ACD456 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB462F701E80BEA600ACD456 /* Artist.swift */,
+				CB462F721E80BECA00ACD456 /* Work.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBE7D07B1E7FC8D3002D23D6 /* Artistry */ = {
+		CB462F4D1E80BA7600ACD456 /* Artistry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBE7D08E1E7FC8D3002D23D6 /* Build configuration list for PBXNativeTarget "Artistry" */;
+			buildConfigurationList = CB462F601E80BA7600ACD456 /* Build configuration list for PBXNativeTarget "Artistry" */;
 			buildPhases = (
-				CBE7D0781E7FC8D3002D23D6 /* Sources */,
-				CBE7D0791E7FC8D3002D23D6 /* Frameworks */,
-				CBE7D07A1E7FC8D3002D23D6 /* Resources */,
+				CB462F4A1E80BA7600ACD456 /* Sources */,
+				CB462F4B1E80BA7600ACD456 /* Frameworks */,
+				CB462F4C1E80BA7600ACD456 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,26 +123,26 @@
 			);
 			name = Artistry;
 			productName = Artistry;
-			productReference = CBE7D07C1E7FC8D3002D23D6 /* Artistry.app */;
+			productReference = CB462F4E1E80BA7600ACD456 /* Artistry.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CBE7D0741E7FC8D3002D23D6 /* Project object */ = {
+		CB462F461E80BA7600ACD456 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = whisperkarl.com;
 				TargetAttributes = {
-					CBE7D07B1E7FC8D3002D23D6 = {
+					CB462F4D1E80BA7600ACD456 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CBE7D0771E7FC8D3002D23D6 /* Build configuration list for PBXProject "Artistry" */;
+			buildConfigurationList = CB462F491E80BA7600ACD456 /* Build configuration list for PBXProject "Artistry" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,55 +150,52 @@
 				en,
 				Base,
 			);
-			mainGroup = CBE7D0731E7FC8D3002D23D6;
-			productRefGroup = CBE7D07D1E7FC8D3002D23D6 /* Products */;
+			mainGroup = CB462F451E80BA7600ACD456;
+			productRefGroup = CB462F4F1E80BA7600ACD456 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBE7D07B1E7FC8D3002D23D6 /* Artistry */,
+				CB462F4D1E80BA7600ACD456 /* Artistry */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CBE7D07A1E7FC8D3002D23D6 /* Resources */ = {
+		CB462F4C1E80BA7600ACD456 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE7D08A1E7FC8D3002D23D6 /* LaunchScreen.storyboard in Resources */,
-				CBE7D0871E7FC8D3002D23D6 /* Assets.xcassets in Resources */,
-				CBE7D0931E7FCF2B002D23D6 /* artists.json in Resources */,
-				CBE7D0851E7FC8D3002D23D6 /* Main.storyboard in Resources */,
+				CB462F641E80BAA600ACD456 /* Main.storyboard in Resources */,
+				CB462F5C1E80BA7600ACD456 /* LaunchScreen.storyboard in Resources */,
+				CB462F6F1E80BD1C00ACD456 /* artists.json in Resources */,
+				CB462F591E80BA7600ACD456 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CBE7D0781E7FC8D3002D23D6 /* Sources */ = {
+		CB462F4A1E80BA7600ACD456 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE7D0821E7FC8D3002D23D6 /* ViewController.swift in Sources */,
-				CBE7D0801E7FC8D3002D23D6 /* AppDelegate.swift in Sources */,
+				CB462F521E80BA7600ACD456 /* AppDelegate.swift in Sources */,
+				CB462F751E811EB600ACD456 /* WorkTableViewCell.swift in Sources */,
+				CB462F6B1E80BB0800ACD456 /* ArtistDetailViewController.swift in Sources */,
+				CB462F731E80BECA00ACD456 /* Work.swift in Sources */,
+				CB462F6D1E80BB6600ACD456 /* ArtistTableViewCell.swift in Sources */,
+				CB462F711E80BEA600ACD456 /* Artist.swift in Sources */,
+				CB462F691E80BAEA00ACD456 /* ArtistLsitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CBE7D0831E7FC8D3002D23D6 /* Main.storyboard */ = {
+		CB462F5A1E80BA7600ACD456 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CBE7D0841E7FC8D3002D23D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CBE7D0881E7FC8D3002D23D6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBE7D0891E7FC8D3002D23D6 /* Base */,
+				CB462F5B1E80BA7600ACD456 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,7 +203,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CBE7D08C1E7FC8D3002D23D6 /* Debug */ = {
+		CB462F5E1E80BA7600ACD456 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -225,7 +253,7 @@
 			};
 			name = Debug;
 		};
-		CBE7D08D1E7FC8D3002D23D6 /* Release */ = {
+		CB462F5F1E80BA7600ACD456 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +296,7 @@
 			};
 			name = Release;
 		};
-		CBE7D08F1E7FC8D3002D23D6 /* Debug */ = {
+		CB462F611E80BA7600ACD456 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -280,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		CBE7D0901E7FC8D3002D23D6 /* Release */ = {
+		CB462F621E80BA7600ACD456 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,24 +323,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBE7D0771E7FC8D3002D23D6 /* Build configuration list for PBXProject "Artistry" */ = {
+		CB462F491E80BA7600ACD456 /* Build configuration list for PBXProject "Artistry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBE7D08C1E7FC8D3002D23D6 /* Debug */,
-				CBE7D08D1E7FC8D3002D23D6 /* Release */,
+				CB462F5E1E80BA7600ACD456 /* Debug */,
+				CB462F5F1E80BA7600ACD456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBE7D08E1E7FC8D3002D23D6 /* Build configuration list for PBXNativeTarget "Artistry" */ = {
+		CB462F601E80BA7600ACD456 /* Build configuration list for PBXNativeTarget "Artistry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CBE7D08F1E7FC8D3002D23D6 /* Debug */,
-				CBE7D0901E7FC8D3002D23D6 /* Release */,
+				CB462F611E80BA7600ACD456 /* Debug */,
+				CB462F621E80BA7600ACD456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CBE7D0741E7FC8D3002D23D6 /* Project object */;
+	rootObject = CB462F461E80BA7600ACD456 /* Project object */;
 }
