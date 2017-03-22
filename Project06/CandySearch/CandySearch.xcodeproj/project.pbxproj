@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CBF175391E82113D00D5129C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF175381E82113D00D5129C /* AppDelegate.swift */; };
-		CBF1753B1E82113D00D5129C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1753A1E82113D00D5129C /* ViewController.swift */; };
 		CBF1753E1E82113D00D5129C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF1753C1E82113D00D5129C /* Main.storyboard */; };
 		CBF175401E82113D00D5129C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF1753F1E82113D00D5129C /* Assets.xcassets */; };
 		CBF175431E82113D00D5129C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF175411E82113D00D5129C /* LaunchScreen.storyboard */; };
+		CBF1754B1E8224AC00D5129C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1754A1E8224AC00D5129C /* MasterViewController.swift */; };
+		CBF1754D1E8224C200D5129C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1754C1E8224C200D5129C /* DetailViewController.swift */; };
+		CBF1754F1E8224E500D5129C /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF1754E1E8224E500D5129C /* Candy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CBF175351E82113D00D5129C /* CandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF175381E82113D00D5129C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBF1753A1E82113D00D5129C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBF1753D1E82113D00D5129C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF1753F1E82113D00D5129C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBF175421E82113D00D5129C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBF175441E82113D00D5129C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF1754A1E8224AC00D5129C /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CBF1754C1E8224C200D5129C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CBF1754E1E8224E500D5129C /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				CBF175381E82113D00D5129C /* AppDelegate.swift */,
-				CBF1753A1E82113D00D5129C /* ViewController.swift */,
+				CBF1754A1E8224AC00D5129C /* MasterViewController.swift */,
+				CBF1754C1E8224C200D5129C /* DetailViewController.swift */,
+				CBF1754E1E8224E500D5129C /* Candy.swift */,
 				CBF1753C1E82113D00D5129C /* Main.storyboard */,
 				CBF1753F1E82113D00D5129C /* Assets.xcassets */,
 				CBF175411E82113D00D5129C /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF1753B1E82113D00D5129C /* ViewController.swift in Sources */,
+				CBF1754D1E8224C200D5129C /* DetailViewController.swift in Sources */,
+				CBF1754F1E8224E500D5129C /* Candy.swift in Sources */,
+				CBF1754B1E8224AC00D5129C /* MasterViewController.swift in Sources */,
 				CBF175391E82113D00D5129C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				CBF175491E82113D00D5129C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
