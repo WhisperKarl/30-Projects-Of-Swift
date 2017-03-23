@@ -12,11 +12,14 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailLabel: UILabel!
-    var detailCandy: Candy? {
-        didSet {
-            configureView()
-        }
-    }
+    
+    var detailCandy: Candy?
+        
+//        {
+//        didSet {
+//            configureView()
+//        }
+//    }
     
     func configureView() {
         if let detailCandy = detailCandy {
