@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		CB4378471E88EB6600176B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4378461E88EB6600176B1D /* AppDelegate.swift */; };
-		CB4378491E88EB6600176B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4378481E88EB6600176B1D /* ViewController.swift */; };
 		CB43784C1E88EB6600176B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB43784A1E88EB6600176B1D /* Main.storyboard */; };
 		CB43784E1E88EB6600176B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43784D1E88EB6600176B1D /* Assets.xcassets */; };
 		CB4378511E88EB6600176B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB43784F1E88EB6600176B1D /* LaunchScreen.storyboard */; };
+		CB4378591E88F50E00176B1D /* InterestsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4378581E88F50E00176B1D /* InterestsCollectionViewCell.swift */; };
+		CB43785B1E88FE9F00176B1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43785A1E88FE9E00176B1D /* HomeViewController.swift */; };
+		CB43785D1E89055000176B1D /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43785C1E89055000176B1D /* Interest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB4378431E88EB6600176B1D /* Interests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4378461E88EB6600176B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB4378481E88EB6600176B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB43784B1E88EB6600176B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB43784D1E88EB6600176B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4378501E88EB6600176B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4378521E88EB6600176B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4378581E88F50E00176B1D /* InterestsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsCollectionViewCell.swift; sourceTree = "<group>"; };
+		CB43785A1E88FE9E00176B1D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CB43785C1E89055000176B1D /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		CB4378451E88EB6600176B1D /* Interests */ = {
 			isa = PBXGroup;
 			children = (
+				CB43785C1E89055000176B1D /* Interest.swift */,
+				CB4378581E88F50E00176B1D /* InterestsCollectionViewCell.swift */,
 				CB4378461E88EB6600176B1D /* AppDelegate.swift */,
-				CB4378481E88EB6600176B1D /* ViewController.swift */,
+				CB43785A1E88FE9E00176B1D /* HomeViewController.swift */,
 				CB43784A1E88EB6600176B1D /* Main.storyboard */,
 				CB43784D1E88EB6600176B1D /* Assets.xcassets */,
 				CB43784F1E88EB6600176B1D /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4378491E88EB6600176B1D /* ViewController.swift in Sources */,
 				CB4378471E88EB6600176B1D /* AppDelegate.swift in Sources */,
+				CB4378591E88F50E00176B1D /* InterestsCollectionViewCell.swift in Sources */,
+				CB43785B1E88FE9F00176B1D /* HomeViewController.swift in Sources */,
+				CB43785D1E89055000176B1D /* Interest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
