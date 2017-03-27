@@ -65,5 +65,13 @@ extension ManagePageViewController: UIPageViewControllerDataSource {
         return nil
     }
     
+    //MARK: UIPageControl
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return photos.count
+    }
+    // ??用于判断变量是否为nil 如果为nil 则赋值为??后面的参数
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return currentIndex ?? 0
+    }
     
 }

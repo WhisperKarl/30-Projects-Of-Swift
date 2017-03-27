@@ -23,8 +23,29 @@ class PhotoCommentViewController: UIViewController {
             imageView.image = UIImage.init(named: photoName)
         }
         
+        NotificationCenter.default.addObserver(
+            self,
+            selector: Selector.keyboardWillShowHandler,
+            name: NSNotification.Name.UIKeyboardWillShow,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: Selector.keyboardWillHideHander,
+            name: .UIKeyboardWillHide,
+            object: nil
+        )
         
+        let generalTapGesture = UITapGestureRecognizer.init(target: self, action: Selector.generalTap)
+        view.addGestureRecognizer(generalTapGesture)
         
+        let zoomTapGesture = UITapGestureRecognizer(target: self, action: Selector.zoomTap)
+        imageView.addGestureRecognizer(zoomTapGesture)
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     fileprivate func adjustInsetForKeyboard(isShow: Bool, notification: Notification) {
@@ -41,6 +62,32 @@ class PhotoCommentViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func keyboardWillShow(notification: Notification) {
+        adjustInsetForKeyboard(isShow: true, notification: notification)
+    }
     
+    func keyboardWillHide(notification: Notification) {
+        adjustInsetForKeyboard(isShow: false, notification: notification)
+    }
+        
+    func openZoomingController (sender: AnyObject) {
+        performSegue(withIdentifier: "zooming", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier,
+            let zommedVC = segue.destination as? ZommedPhotoViewController {
+            if id == "zooming" {
+                zommedVC.photoName = photoName
+            }
+        }
+        
+    }
 
+}
+
+fileprivate extension Selector {
+    static let keyboardWillShowHandler = #selector(PhotoCommentViewController.keyboardWillShow(notification:))
+    static let keyboardWillHideHander = #selector(PhotoCommentViewController.keyboardWillHide(notification:))
+    static let generalTap = #selector(PhotoCommentViewController.dismissKeyboard)
+    static let zoomTap = #selector(PhotoCommentViewController.openZoomingController(sender:))
 }

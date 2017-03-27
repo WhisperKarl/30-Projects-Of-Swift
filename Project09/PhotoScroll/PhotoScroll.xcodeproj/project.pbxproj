@@ -15,6 +15,7 @@
 		CB64FFD31E84B80F002C4B58 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FFD21E84B80F002C4B58 /* CollectionViewController.swift */; };
 		CB64FFD61E84EB54002C4B58 /* ManagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FFD51E84EB54002C4B58 /* ManagePageViewController.swift */; };
 		CB64FFD81E84F850002C4B58 /* PhotoCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB64FFD71E84F850002C4B58 /* PhotoCommentViewController.swift */; };
+		CBA615361E88B25C00D9B526 /* ZommedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA615351E88B25C00D9B526 /* ZommedPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CB64FFD21E84B80F002C4B58 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CB64FFD51E84EB54002C4B58 /* ManagePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagePageViewController.swift; sourceTree = "<group>"; };
 		CB64FFD71E84F850002C4B58 /* PhotoCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCommentViewController.swift; sourceTree = "<group>"; };
+		CBA615351E88B25C00D9B526 /* ZommedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZommedPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB4378391E88B85600176B1D /* zooming */ = {
+			isa = PBXGroup;
+			children = (
+				CBA615351E88B25C00D9B526 /* ZommedPhotoViewController.swift */,
+			);
+			name = zooming;
+			sourceTree = "<group>";
+		};
 		CB64FFB11E84AC9F002C4B58 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +70,8 @@
 		CB64FFBC1E84AC9F002C4B58 /* PhotoScroll */ = {
 			isa = PBXGroup;
 			children = (
-				CB64FFD71E84F850002C4B58 /* PhotoCommentViewController.swift */,
+				CB4378391E88B85600176B1D /* zooming */,
+				CBA615341E88B24100D9B526 /* comment */,
 				CB64FFD41E84EB38002C4B58 /* paging */,
 				CB64FFCF1E84B7D7002C4B58 /* collection */,
 				CB64FFBD1E84AC9F002C4B58 /* AppDelegate.swift */,
@@ -87,6 +98,14 @@
 				CB64FFD51E84EB54002C4B58 /* ManagePageViewController.swift */,
 			);
 			name = paging;
+			sourceTree = "<group>";
+		};
+		CBA615341E88B24100D9B526 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				CB64FFD71E84F850002C4B58 /* PhotoCommentViewController.swift */,
+			);
+			name = comment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +185,7 @@
 				CB64FFD81E84F850002C4B58 /* PhotoCommentViewController.swift in Sources */,
 				CB64FFD61E84EB54002C4B58 /* ManagePageViewController.swift in Sources */,
 				CB64FFBE1E84AC9F002C4B58 /* AppDelegate.swift in Sources */,
+				CBA615361E88B25C00D9B526 /* ZommedPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +347,7 @@
 				CB64FFCE1E84AC9F002C4B58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
