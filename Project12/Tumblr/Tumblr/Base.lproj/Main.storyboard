@@ -138,6 +138,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bm4-JJ-sAG" kind="unwind" unwindAction="unwindToMainViewController:" id="BSb-Yr-WUq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,6 +176,7 @@
                     <connections>
                         <outlet property="audioImage" destination="ZDt-FW-InH" id="71X-v9-YkQ"/>
                         <outlet property="audioLabel" destination="7yd-Gz-fKO" id="dBO-4o-doZ"/>
+                        <outlet property="cancelBtn" destination="QSK-i2-ZN5" id="NOz-EM-0jE"/>
                         <outlet property="chatImage" destination="6Gn-ne-GVH" id="Pk3-3K-mdM"/>
                         <outlet property="chatLabel" destination="y4T-ki-u5u" id="u19-uj-EU9"/>
                         <outlet property="linkImage" destination="0LI-AI-TDc" id="ipC-dD-Dpf"/>
@@ -186,6 +190,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SR-C9-FNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bm4-JJ-sAG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2204" y="275.71214392803603"/>
         </scene>

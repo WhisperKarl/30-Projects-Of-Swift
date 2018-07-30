@@ -13,7 +13,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("喝喝")
     }
 
    
@@ -21,5 +20,14 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func unwindToMainViewController(_ sender: UIStoryboardSegue) {
 
+        // Use data from the view controller which initiated the unwind segue
+        dismiss(animated: true, completion: nil)
+    }
+    
+
+
+    
 }
