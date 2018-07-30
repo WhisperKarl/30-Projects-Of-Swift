@@ -9,6 +9,9 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    
+    let transitionManager = TransitionManager()
+    
     @IBOutlet weak var textImage: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
 
@@ -29,14 +32,9 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var cancelBtn: UIButton!
     
-    @IBAction func cancelAction(_ sender: Any) {
-        
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.transitioningDelegate = self.transitionManager
     }
 
     override func didReceiveMemoryWarning() {

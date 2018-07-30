@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u0g-mo-xHW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u0g-mo-xHW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,6 @@
             <objects>
                 <navigationController navigationBarHidden="YES" toolbarHidden="NO" id="u0g-mo-xHW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WFY-11-Uwf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wEl-3N-HVK">
@@ -82,7 +81,7 @@
                                 <rect key="frame" x="54" y="75" width="100" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anJ-RJ-Vij">
-                                <rect key="frame" x="86.5" y="183" width="35.5" height="21"/>
+                                <rect key="frame" x="87" y="183" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -139,9 +138,6 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="cancelAction:" destination="TZo-bE-qkT" eventType="touchUpInside" id="yZA-q8-oRl"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,7 +173,6 @@
                     <connections>
                         <outlet property="audioImage" destination="ZDt-FW-InH" id="71X-v9-YkQ"/>
                         <outlet property="audioLabel" destination="7yd-Gz-fKO" id="dBO-4o-doZ"/>
-                        <outlet property="cancelBtn" destination="QSK-i2-ZN5" id="VoB-hf-mRv"/>
                         <outlet property="chatImage" destination="6Gn-ne-GVH" id="Pk3-3K-mdM"/>
                         <outlet property="chatLabel" destination="y4T-ki-u5u" id="u19-uj-EU9"/>
                         <outlet property="linkImage" destination="0LI-AI-TDc" id="ipC-dD-Dpf"/>
