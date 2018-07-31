@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuoraDots" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9zL-Yp-3gT">
+                                <rect key="frame" x="100" y="130" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mEc-ag-APc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-ud-A3n" userLabel="dottwo">
+                                <rect key="frame" x="177" y="188" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="89b-ka-Zna"/>
+                                    <constraint firstAttribute="height" constant="20" id="RE8-N2-ZaE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="UJW-x0-g9b" userLabel="dotthree">
+                                <rect key="frame" x="212" y="188" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ECH-NL-CcF"/>
+                                    <constraint firstAttribute="height" constant="20" id="hR2-u7-Wy3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="ZfZ-lk-TMh" userLabel="dotone">
+                                <rect key="frame" x="142" y="188" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2P3-FG-ey5"/>
+                                    <constraint firstAttribute="width" constant="20" id="cml-eq-Ndc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sf7-ud-A3n" firstAttribute="leading" secondItem="ZfZ-lk-TMh" secondAttribute="trailing" constant="15" id="A5e-SV-mhL"/>
+                            <constraint firstItem="UJW-x0-g9b" firstAttribute="leading" secondItem="sf7-ud-A3n" secondAttribute="trailing" constant="15" id="D7U-Q9-Czy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9zL-Yp-3gT" secondAttribute="trailing" constant="100" id="FO4-eu-Mlj"/>
+                            <constraint firstItem="9zL-Yp-3gT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="Kxg-6g-glu"/>
+                            <constraint firstItem="UJW-x0-g9b" firstAttribute="centerY" secondItem="sf7-ud-A3n" secondAttribute="centerY" id="L6M-kz-GkU"/>
+                            <constraint firstItem="sf7-ud-A3n" firstAttribute="top" secondItem="9zL-Yp-3gT" secondAttribute="bottom" constant="8" id="PTR-xz-7sy"/>
+                            <constraint firstItem="ZfZ-lk-TMh" firstAttribute="centerY" secondItem="sf7-ud-A3n" secondAttribute="centerY" id="bVO-lX-04x"/>
+                            <constraint firstItem="sf7-ud-A3n" firstAttribute="centerX" secondItem="9zL-Yp-3gT" secondAttribute="centerX" id="ulW-pb-zqi"/>
+                            <constraint firstItem="9zL-Yp-3gT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yfk-fi-D3Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dotOne" destination="ZfZ-lk-TMh" id="BNS-VT-Cli"/>
+                        <outlet property="dotThree" destination="UJW-x0-g9b" id="is8-hl-OxZ"/>
+                        <outlet property="dotTwo" destination="sf7-ud-A3n" id="oCG-W6-e4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dot" width="54" height="54"/>
+        <image name="logo" width="402" height="112"/>
+    </resources>
+</document>
