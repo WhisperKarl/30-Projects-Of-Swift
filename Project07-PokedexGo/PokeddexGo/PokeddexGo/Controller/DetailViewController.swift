@@ -7,34 +7,32 @@
 //
 
 import UIKit
-
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var nameIDLabel: UILabel!
     @IBOutlet weak var pokeImageView: UIImageView!
     @IBOutlet weak var pokeInfoLabel: UILabel!
     
+    var pokemon: Pokemon! {
+        didSet (newPokemon) {
+            refreshUI()
+        }
+    }
+    
+    func refreshUI() {
+        nameIDLabel?.text = pokemon.name + (pokemon.id < 10 ? " #00\(pokemon.id)" : pokemon.id < 100 ? " #0\(pokemon.id)" : " #\(pokemon.id)")
+        pokeImageView?.image = LibraryAPI.sharedInstance.downloadImg(pokemon.pokeImgUrl)
+        pokeInfoLabel?.text = pokemon.detailInfo
+        self.title = pokemon.name
+    }
     
     override func viewDidLoad() {
+         refreshUI()
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+extension DetailViewController: PokeMonSelectionDelegate{
+    func pokemonSelected(_ newPokeMon: Pokemon) {
+        pokemon = newPokeMon
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
